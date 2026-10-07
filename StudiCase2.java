@@ -28,7 +28,17 @@ public class StudiCase2  {
             } else {
                 System.out.println("Sorry " + studentName + ", you are not eligible for the awards funds due to your rank.");
             }
-        
+        } else if (typeOfActivity.equals("pkm")) 
+            { System.out.print("Enter Funding Status (1 for Funded, 0 for Not Funded): ");
+        fundingStatus = input.nextInt();
+            if (fundingStatus == 1) {
+                System.out.println("Congratulations " + studentName + "! You can receive the award funds.");
+            } else if (fundingStatus == 0) {
+                System.out.println("Sorry " + studentName + ", you are not eligible for the awards funds due to your funding status.");
+            }
+        } else{
+            System.out.println("Invalid type of activity.");
+        }
     input.close();
         }
     }
