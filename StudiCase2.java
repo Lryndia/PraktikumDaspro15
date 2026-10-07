@@ -32,7 +32,11 @@ public class StudiCase2  {
             { System.out.print("Enter Funding Status (1 for Funded, 0 for Not Funded): ");
         fundingStatus = input.nextInt();
             if (fundingStatus == 1) {
-                System.out.println("Congratulations " + studentName + "! You can receive the award funds.");
+                if (NumberOfDocumentsUploaded >= 4) {
+                    System.out.println("Congratulations " + studentName + "! You can receive the award funds.");
+                } else {
+                    System.out.println("status: Document is incomplete (minus " + (4 - NumberOfDocumentsUploaded) + " document). Award funds cannot be given.");
+                }
             } else if (fundingStatus == 0) {
                 System.out.println("Sorry " + studentName + ", you are not eligible for the awards funds due to your funding status.");
             }
