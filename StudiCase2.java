@@ -16,7 +16,7 @@ public class StudiCase2  {
         NumberOfDocumentsUploaded = input.nextInt();
         
         
-        if (typeOfActivity.equals("belmawa") || typeOfActivity.equals("bakorma")) {
+        if (typeOfActivity.equals("belmawa") || typeOfActivity.equals("bakorma") || typeOfActivity.equals("mandiri")) {
             System.out.print("Winner Rank: ");
         winnerRank = input.nextInt();
             if (winnerRank == 1 || winnerRank == 2 || winnerRank == 3) {
